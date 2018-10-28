@@ -2,7 +2,7 @@ create database RESERVATIONS;
 
 use RESERVATIONS;
 
-create table USER (
+create table user (
 	ID 			int not null auto_increment,
     FIRST_NAME 	varchar(20),
     LAST_NAME 	varchar(20),
@@ -14,7 +14,7 @@ create table USER (
 );
 
 -- -------------------
-create table FLIGHT(
+create table flight(
 	ID 							int not null auto_increment,
     FLIGHT_NUMBER 				varchar(20) not null,
     OPERATING_AIRLINES 			varchar(20) not null,
@@ -28,7 +28,7 @@ create table FLIGHT(
 
 -- --------------------------------------
 
-create table PASSANGER (
+create table passanger (
 	ID 			int not null auto_increment,
     FIRST_NAME 	varchar(256),
     LAST_NAME 	varchar(256),
@@ -40,7 +40,7 @@ create table PASSANGER (
 );
 
 -- ---------------------------------
-create table RESERVATION (
+create table reservation (
 	ID 				int not null auto_increment,
     CHECKED_IN 		tinyint(1),
     NUMBER_OF_BAGS 	int,
@@ -49,25 +49,24 @@ create table RESERVATION (
     CREATED 		timestamp default current_timestamp,
     
     primary key(ID),
-    foreign key(PASSANGER_ID) references PASSANGER(ID) on delete cascade,
-    foreign key(FLIGHT_ID) references FLIGHT(ID)
+    foreign key(PASSANGER_ID) references passanger(ID) on delete cascade,
+    foreign key(FLIGHT_ID) references flight(ID)
 );
 
 -- ---------------------------------
 
-select * from USER;
-select * from FLIGHT;
-select * from PASSANGER;
-select * from RESERVATION;
+select * from user;
+select * from flight;
+select * from passanger;
+select * from reservation;
 
 -- ----------------------------------
 
-drop table USER;
-drop table FLIGHT;
-drop table PASSANGER;
-drop table RESERVATION;
+drop table user;
+drop table flight;
+drop table passanger;
+drop table reservation;
 
 -- ------------------------------------
 
 drop database RESERVATIONS;
-

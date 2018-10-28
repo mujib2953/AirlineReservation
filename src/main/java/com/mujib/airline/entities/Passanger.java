@@ -3,7 +3,7 @@ package com.mujib.airline.entities;
 import javax.persistence.Entity;
 
 @Entity
-public class Passanger {
+public class Passanger extends AbstractEntity {
 
 	private String firstName;
 	private String lastName;

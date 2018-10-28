@@ -1,28 +1,14 @@
 package com.mujib.airline.entities;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Entity
 public class Reservation {
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
 	private Boolean checkedIn;
 	private int numberOfBags;
 	private Passanger passanger;
 	private Flight flight;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	public Boolean getCheckedIn() {
 		return checkedIn;
@@ -58,8 +44,8 @@ public class Reservation {
 
 	@Override
 	public String toString() {
-		return "Reservation [id=" + id + ", checkedIn=" + checkedIn + ", numberOfBags=" + numberOfBags + ", passanger="
-				+ passanger + ", flight=" + flight + "]";
+		return "Reservation [checkedIn=" + checkedIn + ", numberOfBags=" + numberOfBags + ", passanger=" + passanger
+				+ ", flight=" + flight + "]";
 	}
 
 }

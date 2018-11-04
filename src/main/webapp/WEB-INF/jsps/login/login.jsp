@@ -8,12 +8,13 @@
 	</head>
 	<body>
 		<h2>User Login</h2>
-		<form>
+		<form action="loginUser" method="post">
 		<pre>
 			User Name: <input type="text" name="email" />
 			Password : <input type="text" name="password" />
 			<input type="submit" value="login" />
 		</pre>
 		</form>
+		${msg}
 	</body>
 </html>

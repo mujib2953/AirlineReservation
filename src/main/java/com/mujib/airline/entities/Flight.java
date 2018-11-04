@@ -3,23 +3,35 @@ package com.mujib.airline.entities;
 import java.sql.Timestamp;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
 public class Flight extends AbstractEntity {
-
-	private Long flightNumber;
+	
+	@Column(name="FLIGHT_NUMBER")
+	private String flightNumber;
+	
+	@Column(name="OPERATING_AIRLINES")
 	private String operatingAirline;
+	
+	@Column(name="DEPARTURE_CITY")
 	private String departureCity;
+	
+	@Column(name="ARRIVAL_CITY")
 	private String arrivalCity;
+	
+	@Column(name="DATE_OF_DEPARTURE")
 	private Date dateOfDeparture;
+	
+	@Column(name="ESTIMATED_DEPARTURE_TIME")
 	private Timestamp estimatedDepartureTime;
 
-	public Long getFlightNumber() {
+	public String getFlightNumber() {
 		return flightNumber;
 	}
 
-	public void setFlightNumber(Long flightNumber) {
+	public void setFlightNumber(String flightNumber) {
 		this.flightNumber = flightNumber;
 	}
 

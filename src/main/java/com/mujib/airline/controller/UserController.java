@@ -29,6 +29,11 @@ public class UserController {
 
 		return "login/login";
 	}
+	
+	@RequestMapping("/showLog")
+	public String showLoginPage() {
+		return "login/login";
+	}
 
 	@RequestMapping(value = "/loginUser", method = RequestMethod.POST)
 	public String doLogin(@RequestParam("email") String email, @RequestParam("password") String password,

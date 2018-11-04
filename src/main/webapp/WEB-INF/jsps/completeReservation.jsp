@@ -18,10 +18,11 @@
 	<form method="post" action="completeReservation">
 		<pre>
 			<h4>Passanger Details</h4>
-			First Name: <input type="text" name="passanerFirstName" />
-			Last Name:  <input type="text" name="passanerLatsName" />
-			Email: 	    <input type="text" name="passanerEmail" />
-			Phone: 	    <input type="text" name="passanerPhone" />
+			First Name: <input type="text" name="passangerFirstName" />
+			Last Name:  <input type="text" name="passangerLastName" />
+			Middle Name:<input type="text" name="passangerMiddleName" />
+			Email: 	    <input type="text" name="passangerEmail" />
+			Phone: 	    <input type="text" name="passangerPhone" />
 			
 			<h4>Crad Details</h4>
 			Name on the Card: <input type="text" name="nameOnTheCard" />

@@ -62,11 +62,11 @@ select * from reservation;
 
 -- ----------------------------------
 
-drop table user;
-drop table flight;
-drop table passanger;
-drop table reservation;
+-- drop table user;
+-- drop table flight;
+-- drop table passanger;
+-- drop table reservation;
 
 -- ------------------------------------
 
-drop database RESERVATIONS;
+-- drop database RESERVATIONS;

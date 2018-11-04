@@ -10,8 +10,8 @@
 		<h2>Find Flights</h2>
 		<form method="post" action="searchFlight">
 			<pre>
-			From: 			<input type="text" name="from" />
-			To: 			<input type="text" name="to" />
+			From: 	<input type="text" name="from" />
+			To: 	<input type="text" name="to" />
 			Departure Date: <input type="text" name="departureDate" />
 			<input type="submit" value="search flight" />
 			</pre>

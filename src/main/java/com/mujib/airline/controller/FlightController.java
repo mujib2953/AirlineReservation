@@ -15,7 +15,7 @@ import com.mujib.airline.entities.Flight;
 import com.mujib.airline.repos.FlightRepository;
 
 @Controller
-public class flightController {
+public class FlightController {
 	
 	@Autowired
 	private FlightRepository flightRepos;
